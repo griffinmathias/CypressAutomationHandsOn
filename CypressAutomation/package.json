@@ -1,0 +1,24 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "edgeTest": "npm run test -- --headed --browser edge",
+    "recordDashBoardTest": "npm run test -- --record --key 9c4e405d-fc2d-4b6f-a628-2839c236e1ef --reporter mochawesome",
+    "ecommerceShopTest": "npm run test -- --spec cypress\\integration\\examples\\Test8Framework.cy.js --headed --browser edge"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.0",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+    
+}
